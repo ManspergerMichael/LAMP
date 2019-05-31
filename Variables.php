@@ -24,5 +24,9 @@ $sum2 = $b + $c;
 //strings don't do math
 echo "int to float convrsion $sum2<br>";
 
+//booleans
+$d = true;
+$e = false;
+
 
 ?>
