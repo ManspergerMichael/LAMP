@@ -29,4 +29,15 @@
     echo $value ."<br />";
     }
 
+    echo "<h3>Iteration of 2D array with key value</h3>";
+    $x = array( array(1,3,5), array(2,4,6), array(3,6,9) );
+    foreach($x as $key => $value)
+    {
+        echo "Key is {$key}.";
+        echo "var_dumping value: ";
+        var_dump($value);
+        echo "<br>";
+    }
+
+
 ?>
