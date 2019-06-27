@@ -8,7 +8,7 @@ function MultipleOf5($arr)
        $arr[$i] = $arr[$i] * 5;
    }
 
-   echo "<p>Multiple of 5 result</p> <ul>";
+   echo "<h3>Multiples of 5</h3> <ul>";
 
    foreach ($arr as $key) 
    {
@@ -18,6 +18,19 @@ function MultipleOf5($arr)
 
 }
 
+function printArray($arr)
+{
+    echo "<ul>";
+    foreach($arr as $key)
+    {
+        echo "<li>$key</li>";
+    }
+    echo "</ul>";
+}
+
 MultipleOf5($array);
 
+echo "<h3>Print Array</h3>";
+
+printArray($array);
 ?>
