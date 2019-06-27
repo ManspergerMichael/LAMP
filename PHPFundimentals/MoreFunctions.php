@@ -18,9 +18,24 @@ function MultipleOf5($arr)
 
 }
 
+function  MultipleOfX($arr, $num)
+{
+    for($i = 0; $i < count($arr); $i++)
+   {
+       $arr[$i] = $arr[$i] * $num;
+   }
+   echo "<h3>Multiples of X</h3> <ul>";
+
+   foreach ($arr as $key) 
+   {
+        echo "<li>$key</li>";
+   }
+   echo "</ul>";
+}
+
 function printArray($arr)
 {
-    echo "<ul>";
+    echo "<h3>Print Array</h3><ul>";
     foreach($arr as $key)
     {
         echo "<li>$key</li>";
@@ -29,8 +44,7 @@ function printArray($arr)
 }
 
 MultipleOf5($array);
-
-echo "<h3>Print Array</h3>";
+MultipleOfX($array, 2);
 
 printArray($array);
 ?>
