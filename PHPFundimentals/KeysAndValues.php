@@ -6,6 +6,6 @@ $users2["First_name"] = "Michael";
 $users2['last_name'] = "Choi";
 //single or double quotes
 
-echo "it works";
+echo "First Name: " . $users['First_name'] . " Last Name: " . $users['Last_name'];
 
 ?>
