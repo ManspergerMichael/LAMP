@@ -8,8 +8,9 @@
 }
 td
 {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 }
 container
 {
@@ -22,5 +23,5 @@ h1
 }
 table
 {
-    
+    margin: auto;
 }
