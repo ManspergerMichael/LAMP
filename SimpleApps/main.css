@@ -6,6 +6,10 @@
 {
     background-color: gray;
 }
+.large
+{
+    font-size: 20px;
+}
 td
 {
     width: 30px;
@@ -19,7 +23,7 @@ container
 }
 h1
 {
-    text-align: center;
+    margin: auto;
 }
 table
 {
