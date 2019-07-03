@@ -10,23 +10,24 @@
 </head>
 <body>
     <div class="container">
-    <h1>Multiplcation Table</h1>
+        <h1>Multiplcation Table</h1>
         <table>
             <?php 
             for($i = 0; $i <= 10; $i++)
             {
                 if($i % 2 == 0)
                 {
-                    echo "<tr class='even large'>";
+                    echo "<tr class='even'>";
                 }
                 else
                 {
-                    echo "<tr class='odd large'>";
+                    echo "<tr class='odd'>";
                 }
                 
                 for($j = 0; $j <=10; $j++)
                 {
                     $sum = $i * $j;
+                    //if sum is 0 then it is a cell on the border
                     if($sum == 0)
                     {
                         if($i == 0 && $j == 0)
@@ -35,11 +36,11 @@
                         }
                         if($j != 0 && $i == 0)
                         {
-                            echo "<td><b>$j</b></td>";
+                            echo "<td><b class='large'>$j</b></td>";
                         }
                         if($i != 0 && $j == 0)
                         {
-                            echo "<td><b>$i</b></td>";
+                            echo "<td><b class='large'>$i</b></td>";
                         }
                         
                     }
